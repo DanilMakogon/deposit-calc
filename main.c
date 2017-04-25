@@ -15,5 +15,10 @@ int main() {
 	scanf("%d", &time);
 	printf("Input money:");
 	scanf("%d", &sum);
+	
+	if (CheckInput(time,sum) == 0) {
+		printf("Incorrect input \n");
+		return 0;
+	}
 	return 0;
 }
